@@ -19,6 +19,10 @@ func main() {
 		fmt.Println("Error!")
 		return
 	}
+	admin := user.NewAdmin("test@example.com", "test123")
+	admin.OutputUserDetails()
+	admin.ClearUserName()
+	admin.OutputUserDetails()
 
 	appUser.OutputUserDetails() //method struct
 	appUser.ClearUserName()

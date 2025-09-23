@@ -48,6 +48,9 @@ func NewAdmin(email, password string) Admin {
 		password: password,
 		User: User{
 			firstName: "ADMIN",
+			lastName:  "ADMIN",
+			birthdate: "---",
+			createdAt: time.Now(),
 		},
 	}
 }
